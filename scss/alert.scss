@@ -1,0 +1,17 @@
+.alert { 
+    
+    &.alert-info,
+    &.alert-wizard {
+        display: none;
+    }
+    
+    &.alert-error {
+        background: $contentHeaderBg;
+        box-shadow: 0 0 4px $boxShadow;
+    }
+}
+
+
+.post-notice {
+    display: none;
+}

@@ -1,0 +1,141 @@
+.title h3 {
+    font-weight: normal;
+    color: $space;
+}
+
+
+section h3 {
+    font-weight: normal;
+    color: $space;
+}
+
+
+.select-kit {
+    &.combo-box .select-kit-header.is-focused,
+    &.dropdown-select-box .dropdown-select-box-header.is-focused {
+        outline: none;
+        box-shadow: none;
+        border-color: $lead;
+    }
+    
+    &.combo-box.category-drop .select-kit-row[data-value="all-categories"], 
+    &.combo-box.category-drop .select-kit-row[data-value="no-categories"] {
+        color: $royal;
+    }
+    
+    &.dropdown-select-box .select-kit-body,
+    .select-kit-body {
+        box-shadow: 0 0 4px $boxShadow;
+        
+        li.select-kit-row {
+            padding: 8px 12px;
+            border-bottom: solid 1px $snow;
+            background: $white;
+            text-transform: capitalize;
+            
+            &:last-child {
+                border: 0;
+            }
+            
+            &.is-highlighted {
+                background: none;
+            }
+        }
+    }
+    
+    .selected-name {
+        text-transform: capitalize;
+    }
+}
+
+
+.nav.nav-pills,
+ul.nav-pills {
+    li {
+        a {
+            color: $lead;
+        }
+
+        a.active {
+            &,
+            &:hover {
+                background: $royal;
+                color: $white;
+            }
+        }
+
+        a:hover {
+            background: none;
+            color: $space;
+        }
+    }
+    
+    ul.drop {
+        li a.active {
+            background: none;
+            color: $lead;
+        }
+    }
+}
+
+
+.nav.nav-stacked {
+    background: none;
+
+    li {
+        a.active {
+            background: $snow;
+            color: $headerBgColor;
+        }
+    }
+}
+
+
+ul.navigation {
+    border-bottom: 4px solid $snow;
+    
+    li.navigation-item {
+        a {
+            color: $royal;
+            border: 0 !important;
+            
+            &.active {
+                border: 0;
+                background: $snow;
+                color: $headerBgColor;
+            }
+        }
+    }
+}
+
+
+.composer-popup-container {
+    .composer-popup {
+        background: $white;
+        box-shadow: none;
+    }
+}
+
+
+#reply-control {
+    z-index: 1000;
+    
+    .grippie {
+        background: $winter;
+    }
+    
+    &.draft, 
+    &.saving {
+        background: $winter;
+    }
+}
+
+
+.hamburger-panel {
+    .menu-panel li a.widget-link:hover, 
+    .menu-panel li a.widget-link:focus, 
+    .menu-panel li.heading a.widget-link:hover, 
+    .menu-panel li.heading a.widget-link:focus {
+        background: $snow;
+    }
+}

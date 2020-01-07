@@ -1,0 +1,66 @@
+.admin-main-nav {
+    padding-bottom: 10px;
+}
+
+
+.admin-content {
+    background: $contentBg;
+    box-shadow: 0 0 4px $boxShadow;
+    
+    .admin-contents {
+        padding: 0;
+        
+        &.admin-badges {
+            .badges-header {
+                h3 {
+                    padding-left: 20px;
+                }
+                
+                .create-new-badge {
+                    padding-right: 20px;
+                }
+            }
+        }
+        
+        &.dashboard {
+            padding: 20px;
+            
+            .version-checks .section-title,
+            .dashboard-problems .section-title,
+            .community-health .section-title,
+            .moderators-activity .section-title,
+            .reports-index .section-title,
+            ul.navigation {
+                border-bottom: 4px solid $snow;
+            }
+        }
+        
+        .admin-controls {
+            background: $contentHeaderBg;
+            
+            .controls {
+                background: none;
+            }
+            
+            .search label {
+                margin-top: 0;
+            }
+        }
+        
+        .admin-container {
+            padding: 10px 20px 30px 20px;
+        }
+    }
+}
+
+
+.settings {
+    .setting-label {
+        padding-top: 5px;
+    }
+    
+    .setting.overridden h3 {
+        color: $charcoal;
+        margin: 0;
+    }
+}

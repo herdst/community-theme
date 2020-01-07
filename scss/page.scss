@@ -1,0 +1,239 @@
+body {
+    background: $bg;
+}
+
+
+.container.list-container {
+    .row {
+        .full-width {
+            background: $contentBg;
+            box-shadow: 0 0 4px $boxShadow;
+            
+            .topic-list-bottom {
+                padding: 20px;
+            }
+            
+            #list-area {
+                table {
+                    background: none;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
+
+
+table.topic-list,
+table.category-list {
+    thead th,
+    tbody td {
+        padding: 12px 15px;
+    }
+    
+    thead {
+        th {
+            font-size: 1.1em;
+            
+            &.category {
+                padding-left: 20px;
+            }
+        }
+    }
+    
+    tbody {
+        border-top: solid 4px $bg;
+        
+        tr {
+            border-bottom: 4px solid $bg;
+            
+            td.category {
+                padding-left: 15px;
+            }
+            
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+    
+    .topic-list-item-separator td,
+    .category-list-item-separator td {
+        border-bottom-color: $winter;
+        
+        span {
+            color: $winter;
+        }
+    }
+}
+
+
+.directory table,
+table.group-members,
+table.topic-list {
+    background: $contentBg;
+    box-shadow: 0 0 4px $boxShadow;
+    
+    thead th:first-child,
+    tbody td:first-child {
+        padding-left: 20px;
+    }
+    
+    thead th:last-child,
+    tbody td:last-child {
+        padding-right: 20px;
+    }
+}
+
+
+table.group-members {
+    background: none;
+    box-shadow: none;
+}
+
+
+.badge-groups,
+.groups-boxes {
+    background: $contentBg;
+    box-shadow: 0 0 4px $boxShadow;
+    padding: 20px;
+    width: auto;
+    
+    .group-box {
+        .group-membership {
+            .is-group-owner,
+            .is-group-member {
+                color: $lead;
+            }
+        }
+    }
+    
+    .badge-card {
+        margin-bottom: 20px;
+        
+        .badge-contents {
+            background: $snow;
+        }
+    }
+}
+
+
+.badge-groups {
+    .badge-grouping .title {
+        border-bottom: solid 4px $snow;
+        margin-bottom: 20px;
+        
+        h3 {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+.show-badge {
+    .show-badge-details {
+        background: $contentBg;
+        box-shadow: 0 0 4px $boxShadow;
+        
+        .badge-card,
+        .badge-contents {
+            background: none;
+            border: 0;
+            
+            &.large {
+                max-width: none !important;
+            }
+        }
+        
+        .badge-contents {
+            padding: 0 30px;
+        }
+    }
+}
+
+
+.group {
+    .group-details-container {
+        background: $contentBg;
+        box-shadow: 0 0 4px $boxShadow;
+        margin-bottom: 20px;
+        
+        .group-info {
+            margin-bottom: 0;
+        }
+    }
+    
+    .user-content {
+        background: $contentBg;
+        box-shadow: 0 0 4px $boxShadow;
+        
+        .group-members-actions {
+            padding: 20px;
+            width: auto;
+            
+            input {
+                margin: 0;
+            }    
+        }
+    }
+    
+    .user-content-wrapper {
+        background: $contentBg;
+        box-shadow: 0 0 4px $boxShadow;
+        margin-top: 80px;
+        
+        .user-primary-navigation {
+            margin-top: -60px;
+        }
+        
+        .user-secondary-navigation {
+            padding-left: 10px;
+        }
+        
+        .user-content {
+            background: none;
+            box-shadow: none;
+            padding-right: 20px;
+        }
+    }
+}
+
+
+.directory {
+    table {
+        margin-top: 20px;
+    }
+    
+    .me {
+        background: none;
+    }
+}
+
+
+.top-lists {
+    padding: 20px 20px 10px 20px;
+}
+
+
+.body-page {
+    background: $contentBg;
+    box-shadow: 0 0 4px $boxShadow;
+    padding: 20px;
+    max-width: none;
+    width: auto;
+}
+
+
+@include mobile {
+    table.topic-list,
+    table.category-list {
+        background: $contentBg;
+        box-shadow: none; 
+    }
+        
+    .topic-list-item,
+    .category-list-item {
+        border-top: 0;
+        margin-left: 10px;
+    }
+}

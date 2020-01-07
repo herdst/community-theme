@@ -1,0 +1,23 @@
+.not-found-container {
+    .page-not-found .title {
+        color: $headerBgColor;
+    }
+    
+    .page-not-found-topics {
+        background: $contentBg;
+        box-shadow: 0 0 4px $boxShadow;
+        padding: 20px;
+        
+        .popular-topics,
+        .recent-topics {
+            max-width: none;
+            
+            &-title {
+                color: $lead;
+                border-bottom: solid 4px $snow;
+                padding-bottom: 5px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

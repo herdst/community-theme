@@ -1,0 +1,61 @@
+.search-container {
+    .search-advanced {
+        width: 100%;
+        
+        .search-title {
+            display: none;
+        }
+        
+        .search-results {
+            .fps-result {
+                max-width: none;
+                
+                .author {
+                    padding-right: 10px;
+                }
+                
+                .fps-topic {
+                    background: $contentBg;
+                    box-shadow: 0 0 4px $boxShadow;
+                    padding: 20px;
+                    width: 100%;
+                    
+                    .blurb {
+                        max-width: none;
+                    }
+                }
+            }
+        }
+    }
+    
+    .search-advanced-sidebar {
+        display: none;
+    }
+}
+
+
+h3.search-footer {
+    padding-left: 65px;
+    text-align: center;
+}
+
+
+@include mobile {
+    
+    .search-container {
+        .search-advanced {
+            .search-results {
+                .fps-result {
+                    .author {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    
+    h3.search-footer {
+        padding-left: 0;
+    }
+    
+}

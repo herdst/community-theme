@@ -1,0 +1,81 @@
+.user-main {
+    .about,
+    .about.collapsed-info {
+         .details {
+            background: $contentBg;
+            box-shadow: 0 0 4px $boxShadow;
+            padding: 20px;
+            border-bottom: 0;
+            
+            .primary-textual {
+                padding: 0;
+            }
+            
+            .user-profile-names,
+            .controls {
+                padding-top: 40px;
+            }
+        }
+    }
+    
+    .about.collapsed-info {
+        .details {
+           .user-profile-names,
+           .controls {
+               padding-top: 5px;
+           }
+       }
+    }
+    
+    .user-content {
+        background: none;
+    }
+    
+    .user-content-wrapper {
+        padding: 20px;
+        width: auto;
+        background: $contentBg;
+        box-shadow: 0 0 4px $boxShadow;
+        
+        .stats-title {
+            border-bottom: 4px solid $snow;
+            padding-bottom: 5px;
+        }
+        
+        .top-sub-section {
+            table {
+                width: 100%;
+                max-width: none;
+            }
+        }
+        
+        .topic-list {
+            background: none;
+            box-shadow: none;
+        }
+    }
+}
+
+
+.badge-contents {
+    background: $snow;
+}
+
+
+@include mobile {
+    .user-content-wrapper {
+        display: block;
+    }
+    
+    .user-main .about {
+        display: none;
+    }
+    
+    .user-main .user-primary-navigation {
+        padding-bottom: 20px;
+        
+        .main-nav {
+            border-color: $lead;
+        }
+    }
+}

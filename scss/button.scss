@@ -1,0 +1,90 @@
+button {
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+
+button,
+.btn {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        outline: none;
+    }
+    
+    &.delete {
+        &:hover, 
+        &:focus {
+            background: $rose !important;
+        }
+    }
+    
+    &.btn-icon-text {
+        background: none;
+    
+        svg {
+            display: none;
+        }
+    }
+    
+    svg.d-icon {
+        margin-right: 0.1em;
+    }
+    
+    &.btn-danger {
+        background: $rose;
+        
+        &:hover, 
+        &:focus {
+            background: darken($rose, 5%) !important;
+        }
+    }
+    
+    &.btn-default {
+        background: none;
+        color: $space;
+        
+        svg.d-icon {
+            color: $space;
+        }
+        
+        &:hover, 
+        &:focus {
+            background: none;
+            color: $space;
+            
+            svg.d-icon {
+                color: $space;
+            }
+        }
+    }
+    
+    &.btn-primary {
+        background: $royal;
+        
+        &:hover, 
+        &:focus {
+            background: darken($royal, 5%) !important;
+        }
+        
+        &, 
+        &:hover {
+            box-shadow: none;
+        }
+    }
+}
+
+
+.btn-flat {
+    &.bulk-select {
+        svg {
+            margin-right: 6px;
+        }
+    }
+}

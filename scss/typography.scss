@@ -1,0 +1,51 @@
+.oxygen-light {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+}
+.oxygen {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+.oxygen-bold {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+a {
+    color: $royal;
+    
+    &:visited,
+    &:hover {
+        color: $royal;
+    }
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @extend .oxygen-bold;
+}
+
+
+a.title,
+span.relative-date,
+table thead,
+button, .btn,
+#navigation-bar li a,
+.select-kit,
+.category-description {
+    @extend .oxygen;
+}
+
+
+.svg-icon, .svg-icon-title {
+    vertical-align: baseline;
+}

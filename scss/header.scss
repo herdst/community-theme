@@ -1,0 +1,87 @@
+header,
+header.d-header {
+    box-shadow: 0 0 4px rgba(151,151,151,.4);
+    background: $headerBgColor;
+    
+    .badge-notification {
+        background: $white;
+        
+        &, a {
+            color: $headerBgColor;
+        }
+    }
+    
+    .extra-info-wrapper {
+        h1 {
+            .topic-statuses {
+                display: none;
+            }
+            
+            .topic-link {
+                color: $white;
+                padding-top: 8px;
+                font-weight: normal;
+            }
+        }
+        
+        .categories-wrapper {
+            display: none;
+        }
+    }
+    
+    ul.d-header-icons {
+        li {
+            a {
+                svg {
+                    color: #CDCDCD;
+                }
+                
+                &:hover {
+                    svg {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        
+        li:hover,
+        li.active {
+            a.icon {
+                background: $headerBgColor;
+                border-color: $headerBgColor;
+                
+                svg.d-icon {
+                    color: $white;
+                }
+            }
+        }
+    }
+    
+    .search-menu {
+        .panel-body {
+            height: auto;
+            
+            .search-input {
+                padding: 5px;
+                
+                input {
+                    margin: 0;
+                }
+            }
+            
+            .search-context {
+                display: none;
+            }
+        }
+    }
+    
+    .menu-panel li a.widget-link:hover, 
+    .menu-panel li a.widget-link:focus, 
+    .menu-panel li.heading a.widget-link:hover, 
+    .menu-panel li.heading a.widget-link:focus,
+    .user-menu .quick-access-panel li:hover,
+    .user-menu .quick-access-panel li:focus {
+        background: $snow;
+    }
+    
+}
